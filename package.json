@@ -1,0 +1,35 @@
+{
+  "name": "it-project",
+  "version": "0.0.1",
+  "description": "Front-End Pre-Commit Rules",
+  "main": "src/index.js",
+  "scripts": {
+    "lint:js": "linting-rules js",
+    "lint:sass": "linting-rules sass",
+    "lint": "npm run lint:js && npm run lint:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rroblsgo/it-project.git"
+  },
+  "keywords": [
+    "JS"
+  ],
+  "author": "Ricardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rroblsgo/it-project/issues"
+  },
+  "homepage": "https://github.com/rroblsgo/it-project#readme",
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "devDependencies": {
+    "@schibstedspain/frontend-pre-commit-rules": "^8.1.1",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "node-sass": "^4.5.3"
+  }
+}
